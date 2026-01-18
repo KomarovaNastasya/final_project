@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toki Pona Learn - Обучение языку Токи Пона</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-content">
+				<div class="logo">
+					<i class="fas fa-language logo-icon"></i>
+					<div>
+						<div class="logo-text">Toki Pona Learn</div>
+						<div class="logo-subtext">Изучай самый простой язык в мире</div>
+					</div>
+				</div>
+				
+				<nav class="nav-links">
+					<a href="#" class="nav-link active" data-page="home">Главная</a>
+					<a href="#" class="nav-link" data-page="lessons">Уроки</a>
+					<a href="#" class="nav-link" data-page="progress">Прогресс</a>
+				</nav>
+				
+				<div class="progress-container">
+					<div class="progress-text">Прогресс: 0%</div>
+					<div class="progress-bar">
+						<div class="progress-fill" style="width: 0%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    
+    <main>
+        <div class="container">
+            <!-- Главная страница -->
+            <div id="home-page" class="page-content">
+                <h1 class="page-title">Добро пожаловать в Toki Pona Learn!</h1>
+                <div class="content-section">
+                    <p>Токи пона — это искусственный язык, созданный канадским лингвистом и переводчиком Соней Ланг в 2001 году. Название языка переводится как «хороший язык» или «простой язык». В языке всего около 120-137 слов, что делает его одним из самых простых для изучения.</p>
+                    <p>Наша платформа поможет вам освоить основы языка Токи Пона через серию уроков и интерактивных тестов. Начните с первого урока и постепенно продвигайтесь к свободному владению этим удивительным языком!</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3>Преимущества изучения Токи Пона</h3>
+                    <div class="word-list">
+                        <div class="word-card">
+                            <div class="word-toki">pona</div>
+                            <div class="word-translation">Простота и минимализм</div>
+                        </div>
+                        <div class="word-card">
+                            <div class="word-toki">sona</div>
+                            <div class="word-translation">Развитие мышления</div>
+                        </div>
+                        <div class="word-card">
+                            <div class="word-toki">kulupu</div>
+                            <div class="word-translation">Сообщество единомышленников</div>
+                        </div>
+                        <div class="word-card">
+                            <div class="word-toki">musi</div>
+                            <div class="word-translation">Увлекательный процесс</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-section">
+                    <h3>Как работает платформа</h3>
+                    <p>Платформа состоит из уроков, каждый из которых содержит теоретический материал и тест для закрепления знаний. После прохождения теста вы увидите свой результат и сможете просмотреть ошибки.</p>
+                    <p>Система отслеживает ваш прогресс и позволяет вернуться к любому уроку в любое время. Начните обучение прямо сейчас!</p>
+                    <a href="#" class="lesson-button" data-page="lessons" style="width: auto; display: inline-block; padding: 1rem 2rem; margin-top: 1rem;">Начать обучение</a>
+                </div>
+            </div>
+            
+            <!-- Страница уроков -->
+            <div id="lessons-page" class="page-content hidden">
+                <a href="#" class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> Назад на главную
+                </a>
+                <h1 class="page-title">Уроки</h1>
+                
+                <div class="lessons-container" id="lessons-list">
+                    <!-- Уроки будут загружены через JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Страница урока -->
+            <div id="lesson-page" class="page-content hidden">
+                <a href="#" class="back-button" data-page="lessons">
+                    <i class="fas fa-arrow-left"></i> Назад к урокам
+                </a>
+                
+                <div id="lesson-content-container">
+                    <!-- Контент урока будет загружен через JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Страница теста -->
+            <div id="test-page" class="page-content hidden">
+                <a href="#" class="back-button" id="back-from-test">
+                    <i class="fas fa-arrow-left"></i> Назад к уроку
+                </a>
+                
+                <div id="test-container">
+                    <!-- Тест будет загружен через JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Страница результатов -->
+            <div id="results-page" class="page-content hidden">
+                <a href="#" class="back-button" data-page="lessons">
+                    <i class="fas fa-arrow-left"></i> Назад к урокам
+                </a>
+                
+                <div id="results-container">
+                    <!-- Результаты будут загружены через JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Страница прогресса -->
+            <div id="progress-page" class="page-content hidden">
+                <a href="#" class="back-button" data-page="home">
+                    <i class="fas fa-arrow-left"></i> Назад на главную
+                </a>
+                <h1 class="page-title">Ваш прогресс</h1>
+                                
+                <div class="content-section">
+                    <h3>История тестов</h3>
+                    <div id="progress-history">
+                        <!-- История будет загружена через JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-language logo-icon"></i>
+                    <div>
+                        <div class="logo-text">Toki Pona Learn</div>
+                        <div class="logo-subtext">Образовательная платформа</div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-page="home">Главная</a>
+                    <a href="#" class="footer-link" data-page="lessons">Уроки</a>
+                    <a href="#" class="footer-link" data-page="progress">Прогресс</a>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2026 Toki Pona Learn
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<script src="js/data.js"></script>
+	<script src="js/quiz.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
